@@ -6,6 +6,9 @@ var schema = buildSchema(`
   type Query {
     hello: Int
   }
+  type Query {
+    rollDice(numDice: Int!, numSides: Int): [Int]
+  }
 `);
 
 var root = { hello: () => 3};
